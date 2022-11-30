@@ -11,7 +11,7 @@ void main() {
 
   //Testando o acesso ao serviço criado com http e o json-server
   JournalService service = JournalService();
-  service.register("Olá Mundo Doido!");
+  service.register(Journal.empty());
 
   //Acessando o conteúdo enviado por meio de um get.
   //service.get();
