@@ -11,15 +11,15 @@ class AddJournalScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Container(
-          child: IconButton(
-            icon: const Icon(
-              Icons.arrow_back,
-              color: Colors.white,
-            ),
-            onPressed: () {},
-          ),
-        ),
+        // leading: Container(
+        //   child: IconButton(
+        //     icon: const Icon(
+        //       Icons.arrow_back,
+        //       color: Colors.white,
+        //     ),
+        //     onPressed: () {},
+        //   ),
+        // ),
         title: Text("${WeekDay(journal.createdAt.weekday).long.toLowerCase()}, ${journal.createdAt.day} | ${journal.createdAt.month} | ${journal.createdAt.year} "),
         actions: [
           IconButton(
