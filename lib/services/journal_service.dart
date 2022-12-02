@@ -40,7 +40,6 @@ class JournalService {
 
   Future<String> get() async {
     http.Response response = await client.get(Uri.parse(getUrl()));
-    print(response.body);
     return response.body;
   }
 
@@ -58,9 +57,6 @@ class JournalService {
     for(var jsonMap in  listDynamic){
       list.add(Journal.fromMap(jsonMap));
     }
-
-    print(list.length);
-
     return list;
   }
 }
