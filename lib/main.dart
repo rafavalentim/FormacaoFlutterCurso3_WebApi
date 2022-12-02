@@ -14,7 +14,7 @@ void main() {
   service.register(Journal.empty());
 
   //Acessando o conteúdo enviado por meio de um get.
-  //service.get();
+  service.getAll();
 
  asyncStudy();
 
